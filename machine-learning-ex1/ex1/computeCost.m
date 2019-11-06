@@ -13,9 +13,8 @@ J = 0;
 % Instructions: Compute the cost of a particular choice of theta
 %               You should set J to the cost.
 
-
-
-
+h = (theta'*X')'; % compute hypothesis. theta is nx1 and X is mxn, we need h to be mx1 to subtract y from, take (theta'*X')'
+J = sum((h-y).^2)/(2*m);
 
 % =========================================================================
 
